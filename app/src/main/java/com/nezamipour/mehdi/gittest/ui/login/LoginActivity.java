@@ -5,6 +5,8 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -29,6 +31,11 @@ import com.nezamipour.mehdi.gittest.ui.login.LoginViewModelFactory;
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+
+    public static Intent newIntent(Context context) {
+        return new Intent(context, LoginActivity.class);
+
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
