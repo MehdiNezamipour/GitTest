@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.button_go_to_login_page);
-
+        Button buttonClose = findViewById(R.id.close);
         button.setOnClickListener(v -> startActivity(LoginActivity.newIntent(MainActivity.this)));
-
+        buttonClose.setOnClickListener(v -> MainActivity.this.finish());
         //add first commit
 
     }
