@@ -1,10 +1,9 @@
 package com.nezamipour.mehdi.gittest;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.nezamipour.mehdi.gittest.ui.login.LoginActivity;
 
@@ -20,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(v -> startActivity(LoginActivity.newIntent(MainActivity.this)));
         buttonClose.setOnClickListener(v -> MainActivity.this.finish());
         //add first commit
+
+        //add second commit to branch master
 
     }
 }
